@@ -1,0 +1,23 @@
+<link rel="import" href="../polymer/polymer.html"/>
+<dom-module id="element-two">
+    <template>
+        <style>
+            :host{
+                display: block;
+            }
+        </style>
+        <div>This is element two</div>
+    </template>
+    <!--imperative part of the polymer component-->
+    <script>
+        (function(){
+            'use strict'
+            Polymer({
+                is:"element-two",
+                ready:function(){
+                    console.log(this.localName+" is ready...");
+                }
+            });
+        }());
+    </script>
+</dom-module>
